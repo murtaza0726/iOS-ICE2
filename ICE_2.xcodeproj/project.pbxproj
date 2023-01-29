@@ -75,6 +75,7 @@
 		F60423622985E9CC009BEE54 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F60423612985E9CC009BEE54 /* GameScene.sks */; };
 		F60423642985F056009BEE54 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60423632985F056009BEE54 /* Island.swift */; };
 		F60423662985F37C009BEE54 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60423652985F37C009BEE54 /* Layer.swift */; };
+		F60423682985F715009BEE54 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60423672985F715009BEE54 /* Cloud.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +148,7 @@
 		F60423612985E9CC009BEE54 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		F60423632985F056009BEE54 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		F60423652985F37C009BEE54 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		F60423672985F715009BEE54 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +305,7 @@
 				F60423592985E5C5009BEE54 /* Ocean.swift */,
 				F604235A2985E5C5009BEE54 /* Player.swift */,
 				F60423632985F056009BEE54 /* Island.swift */,
+				F60423672985F715009BEE54 /* Cloud.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				F60423642985F056009BEE54 /* Island.swift in Sources */,
 				F60422D62985E525009BEE54 /* GameViewController.swift in Sources */,
 				F60422CE2985E525009BEE54 /* AppDelegate.swift in Sources */,
+				F60423682985F715009BEE54 /* Cloud.swift in Sources */,
 				F604235E2985E5C5009BEE54 /* Player.swift in Sources */,
 				F60423662985F37C009BEE54 /* Layer.swift in Sources */,
 				F604235D2985E5C5009BEE54 /* Ocean.swift in Sources */,
