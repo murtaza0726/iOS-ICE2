@@ -1,5 +1,7 @@
 import SpriteKit
 import GameplayKit
+import AVFoundation
+import UIKit
 
 let screenSize = UIScreen.main.bounds
 var screenWidth: CGFloat?
@@ -49,6 +51,27 @@ class GameScene: SKScene
             clouds.append(cloud)
             addChild(cloud)
         }
+        
+        //engine sound
+        let engineSound = SKAudioNode(fileNamed: "engine.mp3")
+        addChild(engineSound)
+        engineSound.autoplayLooped = true
+        engineSound.run(SKAction.changeVolume(to: 0.5, duration: 0))
+        
+        //pre load sounds
+        do{
+            let sounds: [String] = ["thunder", "yay"]
+            for sound in sounds
+            {
+                let path: String = Bundle.main.path(forResource: sound, ofType: "mp3")!
+                let url: URL = URL(fileURLWithPath: path)
+                let avPlayer: AVAudioPlayer = try AVAudioPlayer(contentsOf: url)
+                avPlayer.prepareToPlay()
+            }
+        }
+        catch{
+            
+        }
     }
     
     func touchDown(atPoint pos : CGPoint)
@@ -94,9 +117,12 @@ class GameScene: SKScene
         player?.Update()
         island?.Update()
         
+        CollisionManager.SquaredRadiusCheck(scene: self, object1: player!, object2: island!)
+        
         for cloud in clouds
         {
             cloud.Update()
+            CollisionManager.SquaredRadiusCheck(scene: self, object1: player!, object2: cloud)
         }
     }
 }

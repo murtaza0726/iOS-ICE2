@@ -76,10 +76,14 @@
 		F60423642985F056009BEE54 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60423632985F056009BEE54 /* Island.swift */; };
 		F60423662985F37C009BEE54 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60423652985F37C009BEE54 /* Layer.swift */; };
 		F60423682985F715009BEE54 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60423672985F715009BEE54 /* Cloud.swift */; };
+		F627E08B299049510011B8DE /* engine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F627E088299049510011B8DE /* engine.mp3 */; };
+		F627E08C299049510011B8DE /* yay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F627E089299049510011B8DE /* yay.mp3 */; };
+		F627E08D299049510011B8DE /* thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F627E08A299049510011B8DE /* thunder.mp3 */; };
+		F6B2C94729903B1A0020E741 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B2C94629903B1A0020E741 /* CollisionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F60422CA2985E525009BEE54 /* ICE_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICE_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60422CA2985E525009BEE54 /* ICE_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICE_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60422CD2985E525009BEE54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F60422D32985E525009BEE54 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		F60422D52985E525009BEE54 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,10 @@
 		F60423632985F056009BEE54 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		F60423652985F37C009BEE54 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 		F60423672985F715009BEE54 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		F627E088299049510011B8DE /* engine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = engine.mp3; sourceTree = "<group>"; };
+		F627E089299049510011B8DE /* yay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yay.mp3; sourceTree = "<group>"; };
+		F627E08A299049510011B8DE /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thunder.mp3; sourceTree = "<group>"; };
+		F6B2C94629903B1A0020E741 /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +173,7 @@
 		F60422C12985E525009BEE54 = {
 			isa = PBXGroup;
 			children = (
-				F60422CC2985E525009BEE54 /* ICE_2 */,
+				F60422CC2985E525009BEE54 /* ICE_3 */,
 				F60422CB2985E525009BEE54 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -173,14 +181,15 @@
 		F60422CB2985E525009BEE54 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F60422CA2985E525009BEE54 /* ICE_2.app */,
+				F60422CA2985E525009BEE54 /* ICE_3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F60422CC2985E525009BEE54 /* ICE_2 */ = {
+		F60422CC2985E525009BEE54 /* ICE_3 */ = {
 			isa = PBXGroup;
 			children = (
+				F6B2C94529903AFD0020E741 /* Managers */,
 				F60423552985E5C5009BEE54 /* Core */,
 				F60423582985E5C5009BEE54 /* GameObjects */,
 				F60422E42985E5A8009BEE54 /* Assets */,
@@ -192,7 +201,7 @@
 				F60422DA2985E527009BEE54 /* Assets.xcassets */,
 				F60422DC2985E527009BEE54 /* LaunchScreen.storyboard */,
 			);
-			path = ICE_2;
+			path = ICE_3;
 			sourceTree = "<group>";
 		};
 		F60422E42985E5A8009BEE54 /* Assets */ = {
@@ -262,6 +271,9 @@
 				F60423112985E5A8009BEE54 /* explosion.mp3 */,
 				F60423122985E5A8009BEE54 /* thunder.ogg */,
 				F60423132985E5A8009BEE54 /* yay.ogg */,
+				F627E088299049510011B8DE /* engine.mp3 */,
+				F627E08A299049510011B8DE /* thunder.mp3 */,
+				F627E089299049510011B8DE /* yay.mp3 */,
 				F60423142985E5A8009BEE54 /* engine.ogg */,
 				F60423152985E5A8009BEE54 /* coin.wav */,
 				F60423162985E5A8009BEE54 /* bullet.mp3 */,
@@ -310,12 +322,20 @@
 			path = GameObjects;
 			sourceTree = "<group>";
 		};
+		F6B2C94529903AFD0020E741 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F6B2C94629903B1A0020E741 /* CollisionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F60422C92985E525009BEE54 /* ICE_2 */ = {
+		F60422C92985E525009BEE54 /* ICE_3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F60422E12985E527009BEE54 /* Build configuration list for PBXNativeTarget "ICE_2" */;
+			buildConfigurationList = F60422E12985E527009BEE54 /* Build configuration list for PBXNativeTarget "ICE_3" */;
 			buildPhases = (
 				F60422C62985E525009BEE54 /* Sources */,
 				F60422C72985E525009BEE54 /* Frameworks */,
@@ -325,9 +345,9 @@
 			);
 			dependencies = (
 			);
-			name = ICE_2;
+			name = ICE_3;
 			productName = ICE_2;
-			productReference = F60422CA2985E525009BEE54 /* ICE_2.app */;
+			productReference = F60422CA2985E525009BEE54 /* ICE_3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -345,7 +365,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F60422C52985E525009BEE54 /* Build configuration list for PBXProject "ICE_2" */;
+			buildConfigurationList = F60422C52985E525009BEE54 /* Build configuration list for PBXProject "ICE_3" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -358,7 +378,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F60422C92985E525009BEE54 /* ICE_2 */,
+				F60422C92985E525009BEE54 /* ICE_3 */,
 			);
 		};
 /* End PBXProject section */
@@ -385,8 +405,10 @@
 				F604234A2985E5A8009BEE54 /* thunder.ogg in Resources */,
 				F60423602985E873009BEE54 /* ocean.png in Resources */,
 				F60423222985E5A8009BEE54 /* plane1.png in Resources */,
+				F627E08D299049510011B8DE /* thunder.mp3 in Resources */,
 				F60423292985E5A8009BEE54 /* ocean.gif in Resources */,
 				F60423452985E5A8009BEE54 /* explosion6.png in Resources */,
+				F627E08C299049510011B8DE /* yay.mp3 in Resources */,
 				F60423422985E5A8009BEE54 /* explosion3.png in Resources */,
 				F60423462985E5A8009BEE54 /* explosion4.png in Resources */,
 				F604233B2985E5A8009BEE54 /* smallexplosion1.png in Resources */,
@@ -414,6 +436,7 @@
 				F604234F2985E5A8009BEE54 /* textureAtlas.png in Resources */,
 				F60422DE2985E527009BEE54 /* LaunchScreen.storyboard in Resources */,
 				F60423282985E5A8009BEE54 /* planeflash1.png in Resources */,
+				F627E08B299049510011B8DE /* engine.mp3 in Resources */,
 				F604232D2985E5A8009BEE54 /* coin10.png in Resources */,
 				F604234E2985E5A8009BEE54 /* bullet.mp3 in Resources */,
 				F604233A2985E5A8009BEE54 /* coin01.png in Resources */,
@@ -440,6 +463,7 @@
 				F60422D42985E525009BEE54 /* GameScene.swift in Sources */,
 				F604235B2985E5C5009BEE54 /* GameProtocol.swift in Sources */,
 				F60423642985F056009BEE54 /* Island.swift in Sources */,
+				F6B2C94729903B1A0020E741 /* CollisionManager.swift in Sources */,
 				F60422D62985E525009BEE54 /* GameViewController.swift in Sources */,
 				F60422CE2985E525009BEE54 /* AppDelegate.swift in Sources */,
 				F60423682985F715009BEE54 /* Cloud.swift in Sources */,
@@ -645,7 +669,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F60422C52985E525009BEE54 /* Build configuration list for PBXProject "ICE_2" */ = {
+		F60422C52985E525009BEE54 /* Build configuration list for PBXProject "ICE_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F60422DF2985E527009BEE54 /* Debug */,
@@ -654,7 +678,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F60422E12985E527009BEE54 /* Build configuration list for PBXNativeTarget "ICE_2" */ = {
+		F60422E12985E527009BEE54 /* Build configuration list for PBXNativeTarget "ICE_3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F60422E22985E527009BEE54 /* Debug */,
